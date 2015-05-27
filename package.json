@@ -1,0 +1,48 @@
+{
+  "name": "commonform-serve-postgres",
+  "description": "serve Common Forms over HTTP from a postgres store",
+  "version": "0.0.0",
+  "author": {
+    "name": "Kyle E. Mitchell",
+    "email": "kyle@kemitchell.com",
+    "url": "http://kemitchell.com"
+  },
+  "bin": {
+    "commonform-serve-postgres": "./bin/commonform-serve-postgres"
+  },
+  "bugs": {
+    "url": "https://github.com/commonform/commonform-serve-postgres/issues"
+  },
+  "dependencies": {
+    "bole": "2.0.0",
+    "commonform-serve": "0.3.0",
+    "docopt": "0.6.2",
+    "levelup": "1.1.0",
+    "pg": "4.3.0",
+    "pg-query-stream": "0.7.0",
+    "sqldown": "2.0.0"
+  },
+  "devDependencies": {
+    "fixpack": "2.2.0",
+    "jscs": "1.13.1",
+    "jshint": "2.7.0"
+  },
+  "homepage": "https://github.com/commonform/commonform-serve-postgres",
+  "keywords": [
+    "HTTP",
+    "contracts",
+    "document assembly",
+    "knowledge management",
+    "law"
+  ],
+  "license": "Apache-2.0",
+  "main": "source/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/commonform/commonform-serve-postgres.git"
+  },
+  "scripts": {
+    "lint": "fixpack && jshint source && jscs source",
+    "precommit": "npm run lint"
+  }
+}
