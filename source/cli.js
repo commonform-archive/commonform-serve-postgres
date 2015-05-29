@@ -39,7 +39,7 @@ module.exports = function(stdin, stdout, stderr, env, argv, callback) {
     http.createServer(serve(logger, level))
       .on('listening', function() {
         logger.info({port: this.address().port});
-        logger.info({data: path});
+        logger.info({data: url});
       })
       .listen(port);
   }
